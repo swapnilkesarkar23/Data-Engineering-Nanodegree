@@ -11,8 +11,8 @@ time_table_drop = "DROP TABLE IF EXISTS time"
 user_table_create = ("""
     CREATE TABLE users
     (user_id int PRIMARY KEY, 
-    first_name varchar, 
-    last_name varchar,
+    first_name varchar NOT NULL, 
+    last_name varchar NOT NULL,
     gender varchar,
     level varchar)
 """)
@@ -21,7 +21,7 @@ user_table_create = ("""
 artist_table_create = ("""
     CREATE TABLE artists
     (artist_id varchar PRIMARY KEY, 
-    name varchar, 
+    name varchar NOT NULL, 
     location varchar,
     latitude float, 
     longitude float)
@@ -31,10 +31,10 @@ artist_table_create = ("""
 song_table_create = ("""
     CREATE TABLE songs
     (song_id varchar PRIMARY KEY, 
-    title varchar, 
-    artist_id varchar REFERENCES artists(artist_id),
+    title varchar NOT NULL, 
+    artist_id varchar NOT NULL REFERENCES artists(artist_id),
     year int, 
-    duration float)
+    duration float NOT NULL)
 """) 
 
 time_table_create = ("""
@@ -51,9 +51,9 @@ time_table_create = ("""
 
 songplay_table_create = ("""
     CREATE TABLE songplays
-    (songplay_id int PRIMARY KEY, 
+    (songplay_id SERIAL PRIMARY KEY, 
     start_time date REFERENCES time(start_time),
-    user_id int REFERENCES users(user_id),
+    user_id int NOT NULL REFERENCES users(user_id),
     level varchar,
     song_id varchar REFERENCES songs(song_id),
     artist_id varchar REFERENCES artists(artist_id),
@@ -96,8 +96,8 @@ time_table_insert = ("""
 
 songplay_table_insert = ("""
     INSERT INTO songplays
-    (songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent)
-    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+    (start_time, user_id, level, song_id, artist_id, session_id, location, user_agent)
+    VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
     ON CONFLICT (songplay_id) DO NOTHING;
 """)
 
