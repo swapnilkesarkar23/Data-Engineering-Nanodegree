@@ -2,7 +2,7 @@
 
 ## Project Description
 
-The aim of this project is to putting below things into practice 
+The aim of this project is to put below things into practice 
 - Relational Data Modeling
 - Data Modeling using Postgres
 - Building an ETL pipeline using Python
