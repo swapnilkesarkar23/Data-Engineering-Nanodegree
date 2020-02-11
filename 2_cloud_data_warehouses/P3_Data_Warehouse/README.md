@@ -41,10 +41,10 @@ SONG_DATA='s3://udacity-dend/song_data'
 [IAM_ROLE]
 ARN=
 ```
-2.Run create_cluster.py to create necessary infrastructure for the project
-3.Add the IAM role ARN created in the previous step to the configuration file
-4.Run create_table.py to create dimension, fact and staging tables
-5.Run etl.py to copy data from S3 to Redshift staging and dimensional tables and insert data into fact table
+2. Run create_cluster.py to create necessary infrastructure for the project
+3. Add the IAM role ARN created in the previous step to the configuration file
+4. Run create_table.py to create dimension, fact and staging tables
+5. Run etl.py to copy data from S3 to Redshift staging and dimensional tables and insert data into fact table
 
 
 ## Project files
