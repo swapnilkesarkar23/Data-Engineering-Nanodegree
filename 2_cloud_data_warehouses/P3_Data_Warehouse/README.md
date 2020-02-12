@@ -54,12 +54,8 @@ ARN=
 3. **create_cluster.py** Creates an redshift cluster with appropriate sizing and IAM role.  
 4. **etl.py** Reads and processes all the files from S3 bucket, inserts and copy data into respective tables
 
-## Database Schema
 
-Star Schema was used for this project.Star schemas are organized into fact and dimension tables in which facts are measurable data about an event while dimensions are attrributes to describe the fact data.
-We have used staging tables which are temporary tables that holds all of the data that will be used to make changes to the target table, including both updates and inserts.
-
-# Project Datasets
+## Project Datasets
 
 We'll be working with two datasets that reside in S3. Here are the S3 links for each:
 - Song data: ```s3://udacity-dend/song_data```
@@ -81,6 +77,11 @@ The log files in the dataset we'll be working with are partitioned by year and m
 ```log_data/2018/11/2018-11-12-events.json
    log_data/2018/11/2018-11-13-events.json
 ```
+
+## Database Schema
+
+Star Schema was used for this project.Star schemas are organized into fact and dimension tables in which facts are measurable data about an event while dimensions are attrributes to describe the fact data.
+We have used staging tables which are temporary tables that holds all of the data that will be used to make changes to the target table, including both updates and inserts.
 
 #### Staging Tables
 - **staging_events**
