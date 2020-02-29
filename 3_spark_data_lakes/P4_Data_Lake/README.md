@@ -7,7 +7,7 @@ A music streaming startup, Sparkify, has grown their user base and song database
 The goal of this project is to build an ETL pipeline that extracts their data from S3, processes them using Spark on EMR, and loads the data back into S3 as a set of dimensional tables.
 
 ## How to run the project
-### AWS EMR Cluster
+### Running on AWS EMR Cluster
 1. Create an EMR cluster with Spark on AWS with appropriate number of core and task nodes(optional).
 2. Once the cluster is provisoned connect to the master node using either ssh or Session manager.
 3. Create an S3 bucket in the same region as EMR cluster where the output files will be stored.
