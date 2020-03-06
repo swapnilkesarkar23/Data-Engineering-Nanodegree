@@ -38,5 +38,51 @@ Projects done in the [Data Engineering Nanodegree by Udacity.com](https://www.ud
 ➔ Set up AWS infrastructure using Infrastructure as Code (IaC).\
 ➔ Design an optimized table by selecting the appropriate distribution style and sorting key.
 
-### Project: [Data Infrastructure on AWS](https://github.com/swapnilkesarkar23/Data-Engineering-Nanodegree/tree/master/2_cloud_data_warehouses/P3_Data_Warehouse)
+#### Project: [Data Infrastructure on AWS](https://github.com/swapnilkesarkar23/Data-Engineering-Nanodegree/tree/master/2_cloud_data_warehouses/P3_Data_Warehouse)
+
+## Course 3: Data Lakes with Spark
+### The Power of Spark
+➔ Understand the big data ecosystem.\
+➔ Understand when to use Spark and when not to use it.
+
+### Data Wrangling with Spark
+➔ Manipulate data with SparkSQL and Spark Dataframes.\
+➔ Use Spark for ETL purposes.
+
+### Debugging and Optimization
+➔ Troubleshoot common errors and optimize their code using the Spark WebUI.
+
+### Introduction to Data Lakes
+➔ Understand the purpose and evolution of data lakes.\
+➔ Implement data lakes on Amazon S3, EMR, Athena, and Amazon Glue.\
+➔ Use Spark to run ELT processes and analytics on data of diverse sources, structures, and vintages.\
+➔ Understand the components and issues of data lakes.
+
+#### Project: [Big Data with Spark](https://github.com/swapnilkesarkar23/Data-Engineering-Nanodegree/tree/master/3_spark_data_lakes/P4_Data_Lake)
+
+## Course 4: Automate Data Pipelines
+### Data Pipelines
+➔ Create data pipelines with Apache Airflow.\
+➔ Set up task dependencies.\
+➔ Create data connections using hooks.
+
+### Data Quality
+➔ Track data lineage.\
+➔ Set up data pipeline schedules.\
+➔ Partition data to optimize pipelines.\
+➔ Write tests to ensure data quality.\
+➔ Backfill data.
+
+### Production Data Pipelines
+➔ Build reusable and maintainable pipelines.\
+➔ Build your own Apache Airflow plugins.\
+➔ Implement subDAGs.\
+➔ Set up task boundaries.\
+➔ Monitor data pipelines
+
+
+
+
+
+
 
